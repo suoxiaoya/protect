@@ -1,0 +1,35 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>相册列表</title>
+</head>
+<body>
+<center>
+    <h2>信息添加</h2>
+    <table border="1">
+        <form action="/php4/lianxi/9.28/index.php/Home/Index/insert" method="post" enctype="multipart/form-data">
+            <tr>
+                <td>商品名称</td>
+                <td><input type="text" name="goodsname"></td>
+            </tr>
+            <tr>
+                <td>商品颜色</td>
+                <td><input type="color" name="goodscolor"></td>
+            </tr>
+            <tr>
+                <td>商品价格</td>
+                <td><input type="text" name="goodsprice"></td>
+            </tr>
+            <tr>
+                <td>商品图片</td>
+                <td><input type="file" name="goodsphoto"></td>
+            </tr>
+            <tr >
+                <td colspan="2"><input type="submit" value="提交"></td>
+            </tr>
+        </form>
+    </table>
+</center>
+</body>
+</html>

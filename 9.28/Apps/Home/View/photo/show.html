@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<center>
+    <h3 style="color: red;">图片展示</h3>
+    <div style="width: 600px;">
+        <foreach name="data" item="v">
+            <div style="width: 180px; float: left;">
+                <div><img src="__ROOT__/Public/Uploads/{$v.p_img}" width="140"/></div>
+            </div>
+        </foreach>
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<center>
+    <h3 style="color: red;">相册展示</h3>
+    <div style="width: 600px;">
+        <foreach name="data" item="v">
+            <div style="width: 180px; float: left;">
+                <div><a href="__MODULE__/Photo/show?id={$v.a_id}"><img src="__ROOT__/Public/Uploads/{$v.a_img}" width="140"/></a></div>
+                <div><a href="__MODULE__/Photo/show?id={$v.a_id}">{$v.a_name}</a>&nbsp;&nbsp;
+                    <a href="__MODULE__/Photo/show?id={$v.a_id}">{$v.num}</a></div>
+            </div>
+        </foreach>
+    </div>
+</center>
+</body>
+</html>
